@@ -23,6 +23,9 @@ input {
 
 body {
   color: #242529;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 button {
@@ -30,12 +33,39 @@ button {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   max-width: 920px;
 }
 
 .container {
   margin: 24px auto;
+}
+
+.header {
+  text-align: center;
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  &__desc {
+    font-size: 16px;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+
+  .footer__love {
+    color: #f94144;
+  }
 }
 
 .input-field {
