@@ -217,6 +217,11 @@ a {
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #c24f34;
+    }
   }
 }
 
