@@ -93,7 +93,7 @@ function updateUserInputs(userId, userLabel) {
 
 function updateJwtOutput(jwt) {
   const [rawHeader, rawPayload, rawSignature] = jwt.split('.')
-  const { header, payload, signature } = decode(jwt, { complete: true })
+  const { header, payload } = decode(jwt, { complete: true })
 
   const rawOutputEl = document.querySelector('.output__raw')
   const headerOutputEl = rawOutputEl.querySelector('.output__header')
@@ -103,7 +103,6 @@ function updateJwtOutput(jwt) {
   const jsonOutputEl = document.querySelector('.output__json')
   const jsonHeaderOutput = jsonOutputEl.querySelector('.output__header')
   const jsonPayloadOutput = jsonOutputEl.querySelector('.output__payload')
-  const jsonSignatureOutput = jsonOutputEl.querySelector('.output__signature')
 
   headerOutputEl.textContent = rawHeader
   payloadOutputEl.textContent = rawPayload
@@ -111,7 +110,6 @@ function updateJwtOutput(jwt) {
 
   jsonHeaderOutput.textContent = JSON.stringify(header, null, 2)
   jsonPayloadOutput.textContent = JSON.stringify(payload, null, 2)
-  jsonSignatureOutput.textContent = JSON.stringify({ signature }, null, 2)
 }
 
 function addUser(userId, userLabel) {
