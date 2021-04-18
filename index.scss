@@ -87,6 +87,7 @@ button {
   font-weight: 600;
   display: inline-flex;
   letter-spacing: 3.5px;
+  transition: background-color 0.3s;
 
   &.button-black {
     display: flex;
