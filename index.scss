@@ -75,6 +75,11 @@ a {
 
   .footer__love {
     color: #f94144;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #c24f34;
+    }
   }
 }
 
