@@ -147,6 +147,12 @@ button {
     white-space: pre-wrap;
     word-break: break-all;
   }
+
+  &__json {
+    :not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .users {
