@@ -145,7 +145,12 @@ function removeUser(userIndex) {
 }
 
 function getUsers() {
-  return JSON.parse(localStorage.getItem('users'))
+  const rawUsers = localStorage.getItem('users')
+  if (!rawUsers) {
+    return []
+  }
+
+  return JSON.parse(rawUsers)
 }
 
 function saveUsers(users) {
