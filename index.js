@@ -38,6 +38,8 @@ function fillUsersList() {
 
   usersList.innerHTML = ''
   usersList.append(...userElements)
+
+  setUsersHintVisible(users.length > 0)
 }
 
 function handleUserIdInput(userId) {
@@ -110,6 +112,12 @@ function updateJwtOutput(jwt) {
 
   jsonHeaderOutput.textContent = JSON.stringify(header, null, 2)
   jsonPayloadOutput.textContent = JSON.stringify(payload, null, 2)
+}
+
+function setUsersHintVisible(isVisible) {
+  const hintEl = document.querySelector('.users-hint')
+
+  hintEl.hidden = !isVisible
 }
 
 function addUser(userId, userLabel) {
