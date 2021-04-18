@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "start": "yarn build && yarn start:dev",
-    "start:dev": "parcel index.html --open"
+    "start:dev": "parcel index.html -p 9999 --open"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-beta.2",
