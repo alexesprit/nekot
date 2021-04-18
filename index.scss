@@ -199,8 +199,6 @@ a {
   list-style: none;
 
   &__item {
-    cursor: pointer;
-
     :not(:last-child) {
       margin-right: 8px;
     }
@@ -216,6 +214,7 @@ a {
 
   &__remove {
     color: #e76f51;
+    cursor: pointer;
     font-weight: bold;
     font-size: 20px;
   }

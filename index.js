@@ -145,10 +145,13 @@ function saveUsers(users) {
 }
 
 function createUserElement(userId, userLabel, userIndex) {
-  const userIdEl = document.createElement('span')
+  const userIdEl = document.createElement('a')
+  userIdEl.href = '#'
   userIdEl.classList.add('users__id')
   userIdEl.textContent = userId
-  userIdEl.addEventListener('click', () => {
+  userIdEl.addEventListener('click', (evt) => {
+    evt.preventDefault()
+
     handleSelectUser(userIndex)
   })
 
