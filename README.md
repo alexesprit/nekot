@@ -2,6 +2,8 @@
 
 Generate JWT for a user with the given user ID.
 
+A *demo* instance available on [nekot.alexesprit.com](https://nekot.alexesprit.com/).
+
 **Important note**: Only use this application locally, otherwise everyone will be able to generate JWTs for your service with it.
 
 ## Development
