@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>nekot</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/inter-ui@3.18.0/inter.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <section class="container">
+        <form class="input-form">
+          <div class="input-field">
+            <label class="label">
+              User ID
+              <input
+                class="input"
+                name="user-id"
+                type="text"
+                placeholder="72d443dd-729c-4b7d-bbb9-759adcac7706"
+              />
+            </label>
+          </div>
+
+          <div class="input-field">
+            <label class="label">
+              Label
+              <input
+                class="input"
+                name="user-label"
+                type="text"
+                placeholder="Vasya"
+              />
+            </label>
+          </div>
+
+          <button type="submit" class="button button-black">Save</button>
+        </form>
+      </section>
+
+      <section class="container">
+        <div class="output">
+          <div class="output__column">
+            <pre
+              class="output__raw"
+            ><span class="output__header" title="Header"></span><span class="output__dot">.</span><span class="output__payload" title="Payload"></span><span class="output__dot">.</span><span class="output__signature" title="Signature"></span></pre>
+          </div>
+          <div class="output__column">
+            <pre
+              class="output__json"
+            ><div class="output__header" title="Header"></div><div class="output__payload" title="Payload"></div><div class="output__signature" title="Signature"></div></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <ul class="users"></ul>
+        <div class="users-hint">
+          Click on a user ID to generate JWT for them.
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

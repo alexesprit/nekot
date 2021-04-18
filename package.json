@@ -1,0 +1,24 @@
+{
+  "name": "plaid-asset-vizualizer",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Alexey <alex.esprit@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "start": "npm run build && npm run dev",
+    "start:dev": "parcel index.html --open"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "parcel": "2.0.0-beta.2",
+    "prettier": "2.2.1",
+    "sass": "1.32.10"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}

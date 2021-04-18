@@ -1,0 +1,181 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  color: #242529;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 920px;
+}
+
+.container {
+  margin: 24px auto;
+}
+
+.input-field {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .label {
+    font-weight: 600;
+
+    .input {
+      margin-top: 10px;
+    }
+  }
+
+  .input {
+    display: block;
+    border: 1px solid #242529;
+    border-radius: 8px;
+    padding: 13px 16px;
+    transition: 0.2s;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(47, 50, 84, 0.5);
+    }
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+      border: 1px solid #4c4c4c;
+      outline: none;
+    }
+  }
+}
+
+.input-form {
+  max-width: 360px;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #13102c;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  letter-spacing: 3.5px;
+
+  &.button-black {
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3254;
+    border: none;
+    border-radius: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 40px;
+
+    &:hover {
+      background-color: #2f2f2f;
+    }
+
+    &:active {
+      background-color: #2f2f2f;
+    }
+  }
+}
+
+.output {
+  display: flex;
+  margin: -8px;
+
+  &__column {
+    width: calc(50% - 16px);
+    margin: 8px;
+
+    padding: 16px;
+    border: 1px solid #242529;
+    border-radius: 8px;
+  }
+
+  &__header {
+    color: #2a9d8f;
+  }
+
+  &__payload {
+    color: #f4a261;
+  }
+
+  &__signature {
+    color: #e76f51;
+  }
+
+  &__raw,
+  &__json {
+    font-size: 16px;
+
+    word-wrap: anywhere;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+.users {
+  list-style: none;
+
+  &__item {
+    cursor: pointer;
+
+    :not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__id {
+    font-family: monospace;
+  }
+
+  &__label {
+    color: #999;
+  }
+
+  &__remove {
+    color: #e76f51;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.users-hint {
+  color: #999;
+  font-size: 13px;
+  margin-top: 16px;
+}
