@@ -199,6 +199,10 @@ a {
   list-style: none;
 
   &__item {
+    * {
+      vertical-align: middle;
+    }
+
     :not(:last-child) {
       margin-right: 8px;
     }
@@ -216,7 +220,7 @@ a {
     color: #e76f51;
     cursor: pointer;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     transition: color 0.3s;
 
     &:hover {
