@@ -10,6 +10,10 @@ Generate JWT for a user with the given user ID.
 # Install dependencies
 > yarn install
 
+# Copy and fill example env file
+> cp .env.example .env
+> nano .env
+
 # Run application
 > yarn start
 
