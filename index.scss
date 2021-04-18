@@ -32,6 +32,16 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #007e71;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 920px;
