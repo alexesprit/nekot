@@ -144,12 +144,9 @@ a {
     font-size: 16px;
     padding: 0 40px;
 
-    &:hover {
-      background-color: #2f2f2f;
-    }
-
+    &:hover,
     &:active {
-      background-color: #2f2f2f;
+      background-color: #26294b;
     }
   }
 }
