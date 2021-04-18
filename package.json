@@ -9,7 +9,7 @@
     "build": "parcel build index.html",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "start": "npm run build && npm run dev",
+    "start": "yarn build && yarn start:dev",
     "start:dev": "parcel index.html --open"
   },
   "devDependencies": {
