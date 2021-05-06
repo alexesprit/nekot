@@ -33,7 +33,11 @@ function fillUsersList() {
 
   const userElements = users.map((user, userIndex) => {
     const [userId, userLabel] = user
-    return createUserElement(userId, userLabel, userIndex)
+
+    const decodedUserId = decodeURIComponent(userId)
+    const decodedUserLabel = decodeURIComponent(userLabel)
+
+    return createUserElement(decodedUserId, decodedUserLabel, userIndex)
   })
 
   usersList.innerHTML = ''
@@ -69,7 +73,10 @@ function handleSelectUser(userIndex) {
   const users = getUsers()
   const [userId, userLabel] = users[userIndex]
 
-  updateUserInputs(userId, userLabel)
+  const decodedUserId = decodeURIComponent(userId)
+  const decodedUserLabel = decodeURIComponent(userLabel)
+
+  updateUserInputs(decodedUserId, decodedUserLabel)
 }
 
 function handleSaveUser(formData) {
