@@ -75,10 +75,14 @@ a {
 
   .footer__love {
     color: #f94144;
+    font-size: 20px;
     transition: color 0.3s;
 
+    position: relative;
+    top: 1px;
+
     &:hover {
-      color: #c24f34;
+      color: #d4122a;
     }
   }
 }
